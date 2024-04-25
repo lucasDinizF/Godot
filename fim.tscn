@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsn1r3efoa3ya"]
+
+[ext_resource type="Script" path="res://Cenas/fim.gd" id="1_qsevg"]
+[ext_resource type="Texture2D" uid="uid://c66jadf5ejdea" path="res://Assets/imagens/imagens/saindo da caverna.jpeg.jpg" id="2_m25v6"]
+[ext_resource type="AudioStream" uid="uid://b12icfitxqn28" path="res://Assets/Sounds/Victory1.mp3" id="3_ft2re"]
+
+[node name="fim" type="Node2D"]
+script = ExtResource("1_qsevg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(663.5, 345)
+scale = Vector2(1.40137, 0.859375)
+texture = ExtResource("2_m25v6")
+
+[node name="AudioFinal" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ft2re")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 428.0
+offset_top = 9.0
+offset_right = 944.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(0.878431, 0.494118, 0.105882, 1)
+theme_override_font_sizes/font_size = 60
+text = "Fim"
+horizontal_alignment = 1
